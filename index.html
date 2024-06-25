@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Botões</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>ME DÁ O CU HOJE ?</h1>
+    </header>
+    <main>
+        <button class="button" onclick="mostrarModal()">SIM</button>
+        <button id="button2" class="button" onclick="window.location.href='#'" onmouseover="moveButton()">NÃO</button>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <img src="https://i.imgur.com/PmqVAuc.jpg" alt="Imagem do Sushi" />
+            <p>HMMM GOSTEI, VOU MANDAR O PIX DO SUSHI</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>
